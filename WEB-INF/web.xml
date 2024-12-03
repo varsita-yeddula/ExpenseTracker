@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Servlet Definition for AddIncomeServlet -->
+    <servlet>
+        <servlet-name>AddIncomeServlet</servlet-name>
+        <servlet-class>com.expense.tracker.AddIncomeServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping for AddIncomeServlet -->
+    <servlet-mapping>
+        <servlet-name>AddIncomeServlet</servlet-name>
+        <url-pattern>/AddIncomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet Definition for AddExpenseServlet -->
+    <servlet>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <servlet-class>com.expense.tracker.AddExpenseServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping for AddExpenseServlet -->
+    <servlet-mapping>
+        <servlet-name>AddExpenseServlet</servlet-name>
+        <url-pattern>/AddExpenseServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>

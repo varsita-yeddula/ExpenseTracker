@@ -1,0 +1,113 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #e3f2fd;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #bb86fc;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #bb86fc;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #03dac5;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #018786;
+}
+
+#expense-items {
+    list-style: none;
+    padding: 0;
+}
+
+#expense-items li {
+    background: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #111;
+    font-size: 14px;
+    color: #e3f2fd;
+}
+#summary p, #filters {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#filters input {
+    width: auto;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+#filters button {
+    display: inline-block;
+    margin-top: 10px;
+}

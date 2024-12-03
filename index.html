@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+        <main>
+            <!-- Add Income Form -->
+            <section id="add-income">
+                <h2>Add Income</h2>
+                <form id="income-form" action="AddIncomeServlet" method="POST">
+                    <div class="form-control">
+                        <label for="income-title">Income Title</label>
+                        <input type="text" id="income-title" name="income-title" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="income-amount">Amount (₹)</label>
+                        <input type="number" id="income-amount" name="income-amount" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="income-date">Date</label>
+                        <input type="date" id="income-date" name="income-date" required>
+                    </div>
+                    <button type="submit" class="btn">Add Income</button>
+                </form>
+            </section>
+
+            <!-- Add Expense Form -->
+            <section id="add-expense">
+                <h2>Add Expense</h2>
+                <form id="expense-form" action="AddExpenseServlet" method="POST">
+                    <div class="form-control">
+                        <label for="expense-title">Expense Title</label>
+                        <input type="text" id="expense-title" name="expense-title" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="expense-amount">Amount (₹)</label>
+                        <input type="number" id="expense-amount" name="expense-amount" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="expense-date">Date</label>
+                        <input type="date" id="expense-date" name="expense-date" required>
+                    </div>
+                    <button type="submit" class="btn">Add Expense</button>
+                </form>
+            </section>
+
+            <!-- Summary Section -->
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>Total Income: ₹<span id="total-income">0</span></p>
+                <p>Total Expenses: ₹<span id="total-expenses">0</span></p>
+                <p>Balance: ₹<span id="balance">0</span></p>
+            </section>
+
+            <!-- Filters Section -->
+            <section id="filters">
+                <h2>Filter Expenses</h2>
+                <label for="filter-year">Year:</label>
+                <input type="number" id="filter-year" placeholder="YYYY" min="2000" max="9999">
+                <label for="filter-month">Month:</label>
+                <input type="number" id="filter-month" placeholder="MM" min="01" max="12" />
+                <button class="btn" id="filter-expenses">Filter</button>
+            </section>
+
+            <!-- Expense History Section -->
+            <section id="expense-list">
+                <h2>Expense History</h2>
+                <ul id="expense-items"></ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Expense Tracker. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
